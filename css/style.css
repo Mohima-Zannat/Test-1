@@ -1,0 +1,736 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+     background-color: #F5FCFF;
+}
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+/* Active Link Styling */
+.nav-link.active {
+    color: #6c63ff !important; /* Purple color for active link */
+    font-weight: 500;
+}
+
+/* Link Styling */
+.nav-link {
+    color: #333 !important; /* Dark color for inactive links */
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+/* Contact Me Button */
+.btn-outline-primary {
+    color: #6c63ff; /* Purple text color */
+    border-color: #6c63ff; /* Purple border */
+    font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6c63ff; /* Purple background on hover */
+    color: #fff; /* White text on hover */
+}
+@media (max-width: 768px) {
+    /* Navbar container adjustments */
+    .navbar {
+        padding: 0px;
+    }
+
+    /* Collapsed navbar menu */
+    .navbar-collapse {
+        background-color: #fff; /* Optional: White background for dropdown */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+    }
+
+    /* Navbar links in collapsed view */
+    .navbar-nav .nav-item .nav-link {
+        margin: 5px 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Contact Me button adjustments */
+    .btn-outline-primary {
+        width: 100%; /* Full-width button on mobile */
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Navbar toggler button (hamburger icon) adjustments */
+    .navbar-toggler {
+        border: none;
+        font-size: 1.2rem;
+        color: #333;
+    }
+}
+
+/* Hero Section Styling */
+.hero-section {
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #6c63ff; /* Purple color for highlighted text */
+}
+
+.subtext {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+.btn-primary:hover {
+    background-color: #5848cc;
+    border-color: #5848cc;
+}
+
+/* Image Section */
+.image-container {
+    background-color: #D9EFFF;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.profile-image {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Decorative Elements (Stars) */
+.image-container::before,
+.image-container::after {
+    content: '✨';
+    color: #6c63ff;
+    font-size: 1.5rem;
+    position: absolute;
+}
+
+.image-container::before {
+    top: -10px;
+    left: -20px;
+}
+
+.image-container::after {
+    bottom: -10px;
+    right: -20px;
+}
+
+/* Responsive Hero Section for Mobile */
+@media (max-width: 768px) {
+    /* Hero Section Padding */
+    .hero-section {
+        padding: 30px 0;
+    }
+
+    /* Small Text */
+    .small-text {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    /* Hero Title */
+    .hero-section h1 {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 1.3;
+    }
+
+    /* Highlighted Text */
+    .highlight {
+        color: #6c63ff;
+        font-size: 2.1rem;
+        text-align: left;
+    }
+
+    /* Subtext */
+    .subtext {
+        font-size: 0.95rem;
+        color: #666;
+        text-align: left;
+    }
+
+    /* Primary Button */
+    .btn-primary {
+        background-color: #6c63ff;
+        border-color: #6c63ff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 500;
+        margin-bottom: 36px;
+        align-items: center;
+        text-align: left;
+    }
+
+    /* Image Container and Profile Image */
+    .image-container {
+        margin: 20px auto;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .profile-image {
+        max-width: 80%;
+    }
+
+    /* Hide Decorative Elements on Mobile */
+    .image-container::before,
+    .image-container::after {
+        display: none;
+    }
+}
+
+
+/* Expertise Section Styling */
+.expertise-section {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.text-center .small-text {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Expertise Cards */
+.expertise-card {
+    background-color: #F5FCFF;
+    padding: 20px 25px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-bottom: 4px solid transparent;
+}
+
+.expertise-card:hover {
+    border-bottom: 4px solid #6c63ff; /* Purple border on hover */
+}
+
+.expertise-card .icon {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+.expertise-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.expertise-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+
+/* About Section Styling */
+.about-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.subheading {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+.position-relative {
+    position: relative;
+}
+
+.abstract-bg {
+    background-color: #6c63ff; /* Purple background */
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(10% 0%, 100% 10%, 90% 90%, 0% 100%); /* Abstract shape */
+    z-index: 1;
+}
+
+.profile-image {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Text Content */
+.about-section p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Portfolio Section Styling */
+.portfolio-section {
+    background-color: #fff; /* Light blue background */
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Dribbble Button */
+.btn-dribbble {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FF5C8D;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+/* Icon Styling */
+.btn-dribbble img {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Hover Effect */
+.btn-dribbble:hover {
+    background-color: #e54d79;
+    color: #fff;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+
+/* Portfolio Card Styling */
+.portfolio-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.portfolio-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    color: #6c63ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    background-color: #F5FCFF; /* Light blue background */
+    padding: 60px 0;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00B4A6; /* Border color to match design */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.stars {
+    color: #00B4A6; /* Star color */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.client-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.client-name {
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.client-company {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+
+/* Contact Section Styling */
+.contact-section {
+    background-color: #fff;
+    padding: 80px 0; /* Increased padding for more vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #140f22; /* Updated border color */
+    border-radius: 10px;
+   
+}
+
+.contact-section .container {
+    padding: 0 ; /* Reduced side padding for more focus on center content */
+    max-width: 800px;
+}
+
+/* Spacing adjustments for form rows */
+.contact-form .row .col-md-6,
+.contact-form .row .col-12 {
+    margin-bottom: 1.8rem; /* Increased spacing for a more open layout */
+}
+
+/* Title and Subtitle styling */
+.section-title {
+    font-size: 2.2rem; /* Slightly larger for better readability */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px; /* Increased margin for separation */
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 1.1rem; /* Adjusted for consistency */
+    margin-bottom: 30px;
+}
+
+.small-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px; /* Slight increase for separation */
+}
+
+/* Form Label Styling */
+.contact-form label {
+    display: block;
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px; /* Increased for better spacing above inputs */
+}
+
+/* Form Input and Select Styling */
+.contact-form .form-control, .contact-form .form-select {
+    border: 1px solid #6c63ff;
+    border-radius: 5px;
+    padding: 10px; /* More padding for a balanced input size */
+    box-shadow: none;
+}
+
+.contact-form .form-control:focus, .contact-form .form-select:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 6px rgba(108, 99, 255, 0.3);
+}
+
+/* Checkbox Styling */
+.contact-form .form-check-input {
+    border-color: #6c63ff;
+}
+
+.contact-form .form-check-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Submit Button Styling */
+.btn-submit {
+    background-color: #6c63ff;
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 35px; /* Slightly larger for a more substantial button */
+    font-size: 1rem; /* Increased for readability */
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Space above button for separation */
+}
+
+.btn-submit:hover {
+    background-color: #5848cc; /* Darker purple on hover */
+}
+@media (max-width: 768px) {
+    /* Contact Section adjustments */
+    .contact-section {
+        padding: 40px 0; /* Reduce padding on smaller screens */
+    }
+
+    .contact-section .container {
+        padding: 0 20px; /* Add some padding on small screens for side spacing */
+    }
+
+    /* Title and Subtitle adjustments */
+    .section-title {
+        font-size: 1.8rem; /* Reduce title size */
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        font-size: 1rem; /* Slightly smaller subtitle */
+        margin-bottom: 20px;
+    }
+
+    /* Form Label and Input adjustments */
+    .contact-form label {
+        font-size: 0.95rem; /* Smaller label text */
+    }
+
+    .contact-form .form-control, .contact-form .form-select {
+        padding: 8px; /* Adjust padding for smaller inputs */
+    }
+
+    /* Submit Button adjustments */
+    .btn-submit {
+        padding: 10px 30px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font for button */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Title and Subtitle adjustments */
+    .section-title {
+        font-size: 1.6rem; /* Further reduce title size */
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem; /* Further reduce subtitle size */
+    }
+
+    /* Form adjustments for mobile */
+    .contact-form .row .col-md-6, .contact-form .row .col-12 {
+        margin-bottom: 1.2rem; /* Adjust spacing for smaller screens */
+    }
+
+    /* Button adjustments */
+    .btn-submit {
+        padding: 8px 25px;
+        font-size: 0.85rem; /* Smaller font for mobile */
+    }
+}
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: #F5FCFF; /* Light blue background */
+    color: #333;
+    padding: 40px 0; /* Increased padding for a larger footer */
+    font-size: 0.95rem;
+}
+
+
+
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer-link {
+    color: #333;
+    margin: 0 10px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #006B6A;
+    text-decoration: underline;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 8px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #006B6A; /* Dark teal color on hover */
+}
+
+
+.hr {
+    border-top: 1px solid #333;
+    opacity: 0.2;
+    margin: 30px 0; /* More space around the divider */
+}
+
+.heart {
+    color: #FF5C8D; /* Heart color */
+    font-size: 1.1rem;
+}
+
+.footer-policy-link {
+    color: #333;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-policy-link:hover {
+    color: #006B6A;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 20px 0; /* Reduce padding on smaller screens */
+    }
+    #contact .small-text {
+        text-align: center;
+    }
+    .footer-link, .social-icon, .footer-policy-link {
+        font-size: 0.85rem; /* Slightly smaller font size */
+        margin: 0 5px; /* Adjust spacing for compact layout */
+    }
+
+    .heart {
+        font-size: 1rem; /* Smaller heart icon */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-section {
+        padding: 15px 0; /* Further reduce padding for mobile */
+    }
+
+    /* Center-align the small text */
+    #contact .small-text {
+        text-align: center;
+    }
+
+    .footer-link, .footer-policy-link {
+        display: block; /* Stack links vertically */
+        margin: 5px 0;
+    }
+
+    .social-icon {
+        font-size: 1rem; /* Smaller social icons */
+        margin: 0 5px;
+    }
+
+    .heart {
+        font-size: 0.9rem; /* Even smaller heart icon */
+    }
+}
